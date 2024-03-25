@@ -46,7 +46,8 @@ from pymilvus import connections, FieldSchema, CollectionSchema, DataType, Colle
 connections.connect("default", host='localhost', port='19530')
 
 # Define the collection and the vector dim
-collection_name = 'movie_vectors_02'
+# Remember to change the collection name or delete and restart the container every time.
+collection_name = 'movie_vectors'
 dim = 80
 
 fields = [
